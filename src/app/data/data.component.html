@@ -1,0 +1,45 @@
+<div class="data">
+  <form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
+      <div class="row">
+        <div class="form-group">
+          <h3>Type your data</h3>
+          <hr>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Type your name"
+            required minlength="3"
+            ngModel
+            name="name">
+          <br/>
+          <label for="surname">Surname</label>
+          <input
+            type="text"
+            id="surname"
+            class="form-control"
+            placeholder="Type your surname"
+            required minlength="3"
+            ngModel
+            name="surname">
+          <br/>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Type your email"
+            required minlength="3"
+            ngModel
+            name="email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-9">
+          <button class="btn btn-success" type="submit">Submit</button>
+          <button class="btn btn-primary" type="reset">Clear</button>
+        </div>
+      </div>
+    </form>
+</div>
