@@ -1,0 +1,10 @@
+div {
+  background-image: url('../../assets/glass.jpg');
+  height: 450px;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  left:0;
+  right:0;
+  /*background-attachment: fixed;*/
+}

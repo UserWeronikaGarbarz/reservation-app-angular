@@ -15,6 +15,10 @@ import {AppRoutingModule} from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {HttpClientModule} from '@angular/common/http';
+import { ReservationsComponent } from './admin/reservations/reservations.component';
+import { SidenavComponent } from './admin/sidenav/sidenav.component';
+import { PictureComponent } from './picture/picture.component';
+import { IconsComponent } from './icons/icons.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import {HttpClientModule} from '@angular/common/http';
     DataComponent,
     AdminComponent,
     AccountComponent,
-    LoginComponent
+    LoginComponent,
+    ReservationsComponent,
+    SidenavComponent,
+    PictureComponent,
+    IconsComponent
   ],
   imports: [
     BrowserModule,

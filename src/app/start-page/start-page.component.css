@@ -1,2 +1,20 @@
-
+.title {
+  margin: 250px auto 100px auto;
+  max-width:1000px;
+  color: #176090;
+}
+h3 {
+  margin: 200px auto 100px auto;
+  max-width: 500px;
+  text-align: center;
+  /*color: #5DADE2;*/
+  color: #73C6B6;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
 

@@ -1,0 +1,34 @@
+<div class="reservationsTable">
+  <div>
+    <h2>Reservations</h2>
+    <p *ngIf="loadedReservations.length < 1">There are no reservations</p>
+    <div *ngIf="loadedReservations.length >= 1">
+      <table class="table">
+        <thead style="background: #cfd8dc; color: #62727b; letter-spacing: 1px">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Surame</th>
+          <th scope="col">Email</th>
+          <th scope="col">Start</th>
+          <th scope="col">End</th>
+          <th scope="col">Tables</th>
+          <th scope="col">Date of reservation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let reservation of loadedReservations; let i= index;">
+          <th scope="row">{{i + 1}}</th>
+          <td>{{reservation.name}}</td>
+          <td>{{reservation.surname}}</td>
+          <td>{{reservation.email}}</td>
+          <td>{{reservation.startOfReservation}}</td>
+          <td>{{reservation.endOfReservation}}</td>
+          <td>{{reservation.tableDtos}}</td>
+          <td>{{reservation.reservationDone}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

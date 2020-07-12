@@ -1,0 +1,51 @@
+.logout {
+  background: #d81b60;
+  color: #ECEFF1;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  margin:25px 20px 20px 20px;
+  transition: 1s;
+  outline:none;
+}
+.logout:hover {
+  background: #971041;
+  outline:none;
+}
+.logout:active {
+  outline:none;
+}
+img {
+  left:10px;
+  width:75px;
+  height:75px;
+  transition: 1s;
+}
+img:hover {
+  transform: scale(0.95);
+}
+ul > li > a {
+  font-size: 25px;
+  margin-top: 25px;
+  color:white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  background: transparent;
+}
+ul > li > a:hover {
+  background: transparent;
+  text-decoration: underline;
+}
+ul > li > a:active {
+  background: transparent;
+}
+ul:first-of-type > li:first-of-type > a {
+  color: #d81b60;
+  font-weight: 600;
+}
+.active_route {
+  text-decoration: underline;
+}
+
+
+

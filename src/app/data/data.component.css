@@ -1,7 +1,54 @@
 .data {
   max-width: 500px !important;
-  margin: 50px auto 50px auto;
+  margin: 250px auto 70px 50px;
+  border: 1px solid #333333;
+  padding: 20px;
 }
-/** {*/
-/*  border: 1px solid red;*/
-/*}*/
+.in {
+  display: flex;
+  justify-content: space-between;
+}
+.in > input {
+  max-width: 300px;
+}
+p {
+  margin: 200px auto 100px auto;
+  max-width: 700px;
+  text-align: center;
+  /*color: #5DADE2;*/
+  color: #73C6B6;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+form > div > div > h3 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+form > div:last-child > button:first-of-type {
+  margin-right: 20px;
+  border:2px solid #1F618D;
+  color: #1F618D;
+  transition: 0.3s;
+}
+form > div:last-child > button:first-of-type:hover {
+  background: #1F618D;
+  color: #ECEFF1;
+}
+form > div:last-child > button:last-of-type {
+  color: #73C6B6;
+  transition: 0.3s;
+}
+form > div:last-child > button:last-of-type:hover {
+  background: #73C6B6;
+  color: #ECEFF1;
+}
+.but {
+  width:100px;
+  height: 40px;
+  margin-top: 40px;
+  border:2px solid #73C6B6;
+  background: transparent;
+  letter-spacing: 1px;
+}
+

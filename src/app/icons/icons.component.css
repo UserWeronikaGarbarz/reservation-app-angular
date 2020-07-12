@@ -1,0 +1,30 @@
+.fixed {
+  position: fixed;
+  top:200px;
+  right:30px;
+}
+.icons {
+  color: #005580;
+  margin-bottom: 25px;
+  background: #d81b60;
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons:hover {
+  background: #971041;
+  color: #ECEFF1;
+}
+div > i {
+  display: flex;
+  color:white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}

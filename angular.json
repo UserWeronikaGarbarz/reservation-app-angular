@@ -21,11 +21,13 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/fontello/css/fontello.css"
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/fontello/css/fontello.css"
             ],
             "scripts": []
           },
