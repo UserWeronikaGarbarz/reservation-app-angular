@@ -1,11 +1,7 @@
-<p>Reserve a table without creating an account!</p>
+<div class="picdata">
 <div class="data">
   <form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
-      <div class="row">
-        <div class="form-group">
           <h3>Type your data</h3>
-          <hr>
-          <div class="in">
           <label for="name">Name:</label>
           <input
             type="text"
@@ -15,8 +11,6 @@
             required minlength="3"
             ngModel
             name="name">
-          </div>
-          <div class="in">
           <label for="surname">Surname:</label>
           <input
             type="text"
@@ -26,8 +20,7 @@
             required minlength="3"
             ngModel
             name="surname">
-          </div>
-          <div class="in">
+
           <label for="email">Email:</label>
           <input
             type="email"
@@ -37,12 +30,52 @@
             required minlength="3"
             ngModel
             name="email">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-          <button class="btn but" type="submit">Submit</button>
-          <button class="btn but" type="reset">Clear</button>
-      </div>
     </form>
+</div>
+<img class="glass" src="assets/glassA.png">
+</div>
+<div class="picdata2">
+<img class="cook" src="assets/cake.jpg">
+
+<form class="day-hour">
+  <h3>Select day and hours</h3>
+
+  <label for="days">Select a day:</label>
+  <select class="form-control" id="days">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+
+  <label for="startHour">Select start:</label>
+  <select class="form-control" id="startHour">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+
+  <label for="endHour">Select end:</label>
+  <select class="form-control" id="endHour">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+
+  <label for="table">Select a table:</label>
+  <select class="form-control" id="table">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+
+  <div class="buttons">
+  <button type="submit">Submit</button>
+  <button type="reset">Clear</button>
+  </div>
+
+</form>
 </div>

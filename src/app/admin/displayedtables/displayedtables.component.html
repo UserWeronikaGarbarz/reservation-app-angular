@@ -1,0 +1,25 @@
+<div class="tablesTable">
+  <div>
+    <h3>TABLES</h3>
+    <p *ngIf="loadedTables.length < 1">There are no tables</p>
+    <div *ngIf="loadedTables.length >= 1">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th scope="col">Number</th>
+          <th scope="col">Seats</th>
+          <th scope="col">Manage</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let table of loadedTables; let i= index;">
+          <td>{{table.tableNumber}}</td>
+          <td>{{table.seatsQuantity}}</td>
+          <td><button type="button">delete</button></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

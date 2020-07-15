@@ -1,18 +1,18 @@
-<nav class="nav navbar-fixed-top">
+<nav class="nav navbar-fixed-top nav1" #stickyMenu [class.sticky] = "sticky">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a routerLink="/main" class="navbar-brand"><img src="assets/chef.png"></a>
+      <a routerLink="/main"><img src="assets/chef.png" [class.imgS] ="imgS" [class.Nimg] ="Nimg"></a>
     </div>
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li routerLinkActive="active_route"><a routerLink="/reserve">Reserve a table</a></li>
-        <li routerLinkActive="active_route"><a routerLink="/signup">Create an account</a></li>
-        <li routerLinkActive="active_route"><a routerLink="/login">Login</a></li>
-        <li routerLinkActive="active_route"><a routerLink="/admin-panel">Admin panel</a></li>
+        <li routerLinkActive="active_route"><a [class.Nfix] ="Nfix" [class.fix] ="fix" routerLink="/reserve">RESERVE A TABLE</a></li>
+        <li routerLinkActive="active_route"><a [class.Nfix] ="Nfix" [class.fix] ="fix" routerLink="/signup">CREATE AN ACCOUNT</a></li>
+        <li routerLinkActive="active_route"><a [class.Nfix] ="Nfix" [class.fix] ="fix" routerLink="/login">LOGIN</a></li>
+        <li routerLinkActive="active_route"><a [class.Nfix] ="Nfix" [class.fix] ="fix" routerLink="/admin-panel">ADMIN PANEL</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-       <button class="logout">Log out</button>
+      <ul class="nav navbar-nav navbar-right" routerLinkActive="active_route">
+        <a routerLink="/see-you"><button [class.logout]="logout" [class.logout2]="logout2">Log out</button></a>
       </ul>
     </div>
   </div>

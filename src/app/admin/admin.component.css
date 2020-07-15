@@ -1,7 +1,44 @@
 .panelA {
-  max-width: 500px !important;
-  margin: 50px 0px 50px 0px;
-  border:1px solid #e0e0e0;
-  padding: 20px 20px 20px 20px;
+  width: 400px;
+  margin-top:150px;
+  margin-left:150px;
+  background: #EDDCD2;
+  padding:20px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
 }
-
+h3 {
+  color: #CB997E;
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+}
+label {
+  color: #CB997E;
+  margin-top: 30px;
+  font-size: 16px;
+}
+button {
+  background: #9A8C98;
+  border: none;
+  color:white;
+  height: 40px;
+  letter-spacing: 1px;
+  width: 100px;
+  border-radius: 7px;
+}
+button:hover {
+  background: #736471;
+  transition: 1s;
+}
+.buttons {
+  max-width: 250px;
+  margin: 45px auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nextto {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}

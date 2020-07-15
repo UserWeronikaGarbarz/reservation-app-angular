@@ -1,10 +1,7 @@
-<div class="panelA">
-  <form #postForm="ngForm" (ngSubmit)="onCreateTable(postForm.value)">
-    <div class="row">
-      <div class="form-group">
-        <h3>New table</h3>
-        <hr>
-        <label>Number of the table</label>
+<div class="nextto">
+  <form class="panelA" #postForm="ngForm" (ngSubmit)="onCreateTable(postForm.value)">
+        <h3>NEW TABLE</h3>
+        <label>Number of the table:</label>
         <input
           type="number"
           id="tableNumber"
@@ -14,8 +11,7 @@
           ngModel
           name="tableNumber"
         >
-        <br/>
-        <label>Seats quantity</label>
+        <label>Seats quantity:</label>
         <input
           type="number"
           id="seatsQuantity"
@@ -25,16 +21,13 @@
           ngModel
           name="seatsQuantity"
         >
-      </div>
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
     </div>
-    <div class="row">
-      <div class="col-xs-9">
-        <button class="btn btn-success" type="submit">Submit</button>
-        <button class="btn btn-primary" type="reset">Clear</button>
-      </div>
-    </div>
-  </form>
-</div>
 
+  </form>
+<app-displayedtables></app-displayedtables>
+</div>
 <app-reservations></app-reservations>
 

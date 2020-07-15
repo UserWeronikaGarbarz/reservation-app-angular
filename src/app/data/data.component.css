@@ -1,47 +1,45 @@
 .data {
-  max-width: 500px !important;
-  margin: 250px auto 70px 50px;
-  border: 1px solid #333333;
-  padding: 20px;
+  width: 400px;
+  /*border: 1px solid #540B0E;*/
+  background: #EDDCD2;
+  padding: 30px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
 }
-.in {
-  display: flex;
-  justify-content: space-between;
+input {
+  width:100%;
+  height: 40px;
+  outline: none;
 }
-.in > input {
-  max-width: 300px;
+input:focus {
+  border: 1px solid #176090;
+  outline: none;
 }
-p {
-  margin: 200px auto 100px auto;
-  max-width: 700px;
-  text-align: center;
-  /*color: #5DADE2;*/
-  color: #73C6B6;
-  font-size: 30px;
-  letter-spacing: 1px;
-  font-weight: 400;
+form > label:first-of-type {
+  margin-top:0px;
 }
-form > div > div > h3 {
+label {
+  font-size: 15px;
+  color: #CB997E;
+  margin-top: 10px;
+}
+h3 {
+  color: #CB997E;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
 }
-form > div:last-child > button:first-of-type {
-  margin-right: 20px;
-  border:2px solid #1F618D;
-  color: #1F618D;
-  transition: 0.3s;
+.glass {
+  height: 350px;
+  width: 450px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.30);
 }
-form > div:last-child > button:first-of-type:hover {
-  background: #1F618D;
-  color: #ECEFF1;
-}
-form > div:last-child > button:last-of-type {
-  color: #73C6B6;
-  transition: 0.3s;
-}
-form > div:last-child > button:last-of-type:hover {
-  background: #73C6B6;
-  color: #ECEFF1;
+.picdata {
+  display: flex;
+  margin:auto;
+  margin-top: 180px;
+  justify-content: space-between;
+  max-width: 900px;
 }
 .but {
   width:100px;
@@ -51,4 +49,47 @@ form > div:last-child > button:last-of-type:hover {
   background: transparent;
   letter-spacing: 1px;
 }
-
+.cook {
+  margin-top: 45px;
+  height: 600px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.30);
+}
+.picdata2 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom:150px;
+}
+.day-hour {
+  margin-top: 45px;
+  background: #EDDCD2;
+  padding: 30px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  width: 450px;
+}
+.day-hour > label {
+  margin-top:30px;
+}
+.day-hour > label:first-of-type {
+  margin-top: 30px;
+}
+button {
+  background: #9A8C98;
+  border: none;
+  color:white;
+  height: 40px;
+  letter-spacing: 1px;
+  width: 100px;
+  border-radius: 7px;
+}
+button:hover {
+  background: #736471;
+  transition: 1s;
+}
+.buttons {
+  max-width: 250px;
+  margin: 45px auto auto auto;
+  display: flex;
+  justify-content: space-between;
+}

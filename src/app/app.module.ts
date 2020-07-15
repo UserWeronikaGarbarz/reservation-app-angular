@@ -17,8 +17,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {HttpClientModule} from '@angular/common/http';
 import { ReservationsComponent } from './admin/reservations/reservations.component';
 import { SidenavComponent } from './admin/sidenav/sidenav.component';
-import { PictureComponent } from './picture/picture.component';
 import { IconsComponent } from './icons/icons.component';
+import { AfterlogoutComponent } from './afterlogout/afterlogout.component';
+import { DisplayedtablesComponent } from './admin/displayedtables/displayedtables.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +32,9 @@ import { IconsComponent } from './icons/icons.component';
     LoginComponent,
     ReservationsComponent,
     SidenavComponent,
-    PictureComponent,
-    IconsComponent
+    IconsComponent,
+    AfterlogoutComponent,
+    DisplayedtablesComponent
   ],
   imports: [
     BrowserModule,
